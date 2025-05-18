@@ -20,7 +20,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         <div className="flex items-center">
           <img 
-            src="/lovable-uploads/2732d9d7-8a14-4664-8524-c1ab72005a11.png" 
+            src="/lovable-uploads/74f59261-7b12-4389-b58e-d18120cae53f.png" 
             alt="Inove Comunicação Visual Logo" 
             className="h-10 md:h-12"
           />
