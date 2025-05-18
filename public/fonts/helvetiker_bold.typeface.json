@@ -1,0 +1,65 @@
+
+{
+  "glyphs": {
+    "I": {
+      "ha": 389,
+      "x_min": 95,
+      "x_max": 294,
+      "o": "m 95 0 l 95 49 l 153 49 l 153 639 l 95 639 l 95 688 l 294 688 l 294 639 l 236 639 l 236 49 l 294 49 l 294 0 l 95 0 z "
+    },
+    "N": {
+      "ha": 794,
+      "x_min": 76,
+      "x_max": 718,
+      "o": "m 76 0 l 76 688 l 177 688 l 177 146 l 618 688 l 718 688 l 718 0 l 617 0 l 617 540 l 177 0 l 76 0 z "
+    },
+    "O": {
+      "ha": 834,
+      "x_min": 61,
+      "x_max": 773,
+      "o": "m 417 -14 q 281 34 339 -14 q 189 167 223 82 q 154 345 154 252 q 189 522 154 437 q 282 657 223 607 q 417 707 341 707 q 552 657 492 707 q 645 522 611 607 q 680 345 680 437 q 645 167 680 252 q 553 34 611 82 q 417 -14 495 -14 m 417 59 q 528 107 486 59 q 594 219 570 155 q 618 344 618 283 q 594 469 618 405 q 528 581 570 533 q 417 630 486 630 q 305 582 347 630 q 240 469 263 534 q 216 344 216 405 q 240 219 216 283 q 306 107 264 155 q 417 59 347 59 z "
+    },
+    "V": {
+      "ha": 722,
+      "x_min": 2,
+      "x_max": 720,
+      "o": "m 2 688 l 118 688 l 361 156 l 604 688 l 720 688 l 402 0 l 320 0 l 2 688 z "
+    },
+    "E": {
+      "ha": 667,
+      "x_min": 76,
+      "x_max": 619,
+      "o": "m 76 0 l 76 688 l 619 688 l 619 638 l 161 638 l 161 398 l 588 398 l 588 349 l 161 349 l 161 49 l 619 49 l 619 0 l 76 0 z "
+    }
+  },
+  "familyName": "Helvetiker",
+  "ascender": 750,
+  "descender": -250,
+  "underlinePosition": -100,
+  "underlineThickness": 50,
+  "boundingBox": {
+    "yMin": -250,
+    "xMin": -50,
+    "yMax": 1100,
+    "xMax": 1100
+  },
+  "resolution": 1000,
+  "original_font_information": {
+    "format": "truetype",
+    "copyright": "Copyright (c) 1985, 1987, 1989, 1990 Adobe Systems Incorporated.  All rights reserved.",
+    "fontFamily": "Helvetiker",
+    "fontSubfamily": "Bold",
+    "uniqueID": "Helvetiker Bold",
+    "fullName": "Helvetiker Bold",
+    "version": "Version 1.000;PS 001.000;Core 001.000;makeotf.lib1.5.4650",
+    "postScriptName": "Helvetiker-Bold",
+    "trademark": "Helvetiker is either a registered trademark or a trademark of Adobe Systems Incorporated in the United States and/or other countries.",
+    "manufacturerURL": "http://www.adobe.com/type",
+    "designer": "Unknown",
+    "description": "© 2007 Microsoft Corporation. All rights reserved.",
+    "manufacturerName": "Adobe Systems",
+    "designerURL": "http://www.adobe.com/type/font-designers.html"
+  },
+  "cssFontWeight": "bold",
+  "cssFontStyle": "normal"
+}

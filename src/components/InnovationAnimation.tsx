@@ -2,6 +2,54 @@
 import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Sparkles, Zap, Wand } from "lucide-react";
+import { Canvas } from "@react-three/fiber";
+import { Text3D, OrbitControls, Center, PresentationControls } from "@react-three/drei";
+
+// 3D Text Animation Component
+const AnimatedText3D = () => {
+  const [bounce, setBounce] = useState(0);
+  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setBounce(prev => (prev + 1) % 100);
+    }, 50);
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <>
+      <ambientLight intensity={0.5} />
+      <directionalLight position={[10, 10, 5]} intensity={1} />
+      <directionalLight position={[-10, -10, -5]} intensity={0.5} color="#00ff00" />
+      <PresentationControls
+        global
+        config={{ mass: 2, tension: 500 }}
+        snap={{ mass: 4, tension: 1500 }}
+        rotation={[0, 0, 0]}
+        polar={[-Math.PI / 3, Math.PI / 3]}
+        azimuth={[-Math.PI / 1.4, Math.PI / 2]}
+      >
+        <Center>
+          <group>
+            {["I", "N", "O", "V", "E"].map((letter, i) => (
+              <Text3D
+                key={i}
+                font="/fonts/helvetiker_bold.typeface.json"
+                size={1.5}
+                height={0.2}
+                position={[i * 2 - 4, 0, 0 + Math.sin((bounce + i * 10) / 10) * 0.3]}
+                rotation={[Math.sin((bounce + i * 10) / 15) * 0.1, 0, 0]}
+              >
+                {letter}
+                <meshStandardMaterial color="#97C847" />
+              </Text3D>
+            ))}
+          </group>
+        </Center>
+      </PresentationControls>
+    </>
+  );
+};
 
 const InnovationAnimation = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -43,6 +91,17 @@ const InnovationAnimation = () => {
             Transformamos ideias em comunicação visual impactante, 
             combinando criatividade, tecnologia e expertise para destacar sua marca no mercado.
           </p>
+        </div>
+
+        {/* 3D Text Animation Canvas */}
+        <div 
+          className={`w-full h-[300px] mb-16 transform transition-all duration-1000 ${
+            isVisible ? "scale-100 opacity-100" : "scale-95 opacity-0"
+          }`}
+        >
+          <Canvas camera={{ position: [0, 0, 10], fov: 50 }}>
+            <AnimatedText3D />
+          </Canvas>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
