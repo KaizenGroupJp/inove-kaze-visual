@@ -1,3 +1,4 @@
+
 import { Canvas } from '@react-three/fiber';
 import { Text3D, Center, PresentationControls } from '@react-three/drei';
 import { useSpring, animated } from '@react-spring/three';
@@ -15,7 +16,7 @@ const AnimatedText3D = () => {
     <animated.group scale={animation.scale}>
       <Center>
         <Text3D
-          font="/fonts/Inter_Bold.json" // ou qualquer fonte 3D bold que você tenha
+          font="/fonts/helvetiker_bold.typeface.json"
           size={1.5}
           height={0.6}
           curveSegments={32}
@@ -26,7 +27,7 @@ const AnimatedText3D = () => {
         >
           inove
           <meshPhysicalMaterial
-            color="#ffffff"
+            color="#97C847"
             metalness={0.9}
             roughness={0.1}
             clearcoat={1}
