@@ -5,15 +5,15 @@ import { useSpring, animated } from '@react-spring/three';
 import { Suspense } from 'react';
 
 const AnimatedText3D = () => {
-  const animation = useSpring({
-    scale: [1.1, 1.1, 1.1],
+  const props = useSpring({
     from: { scale: [1, 1, 1] },
+    to: { scale: [1.1, 1.1, 1.1] },
     config: { tension: 250, friction: 10 },
     loop: { reverse: true },
   });
 
   return (
-    <animated.group scale={animation.scale}>
+    <animated.group scale={props.scale as any}>
       <Center>
         <Text3D
           font="/fonts/helvetiker_bold.typeface.json"
